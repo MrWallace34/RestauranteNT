@@ -35,12 +35,18 @@
                 <div class="col-auto d-flex justify-content-center mt-4">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#nuevoUsuarioModal">
-                        Nuevo usuario
+                        Nuevo empleado
+                    </button>
+                </div>
+                <div class="col-auto d-flex justify-content-center mt-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#nuevoProductoModal">
+                        Nuevo producto
                     </button>
                 </div>
             </div>
 
-
+            <!--tabla empleado-->
             <div class="col-md-10">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -66,39 +72,114 @@
                         <p id="texto1"></p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="nuevoUsuarioModal" tabindex="-1" aria-labelledby="nuevoUsuarioLabel"
+
+                <!-- Modal empleado-->
+                <div class="modal fade" id="nuevoUsuarioModal" tabindex="-1" aria-labelledby="nuevoUsuarioLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="nuevoUsuarioLabel">Agregar usuario</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="identificacion" class="form-label">Identificación</label>
+                                        <input type="number" class="form-control" id="identificacion">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="identificacion" class="form-label">Cargo</label>
+                                        <input type="text" class="form-control" id="cargo">
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla producto-->
+                <div class="col-md-10">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                            <li class="breadcrumb-item active" aria-current="page">Producto</li>
+                        </ol>
+                    </nav>
+
+                    <div class="row d-flex ">
+                        <div class="col-md-8">
+                            <table class="table table-striped table-responsive" id="productos">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">N° Serie</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Fecha de lote</th>
+                                        <th scope="col">Fecha de expiracion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                            <p id="texto2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto-->
+            <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="nuevoUsuarioLabel">Agregar usuario</h1>
+                            <h1 class="modal-title fs-5" id="nuevoProductoLabel">Agregar Producto</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre">
+                                    <label for="nombrep" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombrep">
 
                                 </div>
                                 <div class="mb-3">
-                                    <label for="identificacion" class="form-label">Identificación</label>
-                                    <input type="number" class="form-control" id="identificacion">
+                                    <label for="nserie" class="form-label">N° Serie</label>
+                                    <input type="number" class="form-control" id="nserie">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="identificacion" class="form-label">Cargo</label>
-                                    <input type="text" class="form-control" id="cargo">
+                                    <label for="cantidad" class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad">
                                 </div>
-
+                                <div class="mb-3">
+                                    <label for="ing" class="form-label">Fecha de ingreso</label>
+                                    <input type="date" class="form-control" id="ing">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exp" class="form-label">Fecha de expiración</label>
+                                    <input type="date" class="form-control" id="exp">
+                                </div>
                             </form>
                         </div>
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
+                            <button type="button" class="btn btn-primary" id="nuevoProducto">Guardar</button>
                         </div>
                     </div>
                 </div>
