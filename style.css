@@ -6,13 +6,15 @@
 .imag2{
    position: relative;
    right: 100px;
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 21%;
 }
 
 .imag{
   position: relative;
-  left: 750px;
+  left: 980px;
     margin-right: 10px;
+    width: 196px;
 }
 
 body{
@@ -27,5 +29,14 @@ body{
 }
 
 .producto{
+    color: #000;
+}
+
+
+.Inicio{
+    color: #000;
+}
+
+.Empleados{
     color: #000;
 }
