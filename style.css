@@ -1,0 +1,31 @@
+.contenedor{
+    display: flex;
+   justify-content: left;
+}
+
+.imag2{
+   position: relative;
+   right: 100px;
+    margin-left: 10px;
+}
+
+.imag{
+  position: relative;
+  left: 750px;
+    margin-right: 10px;
+}
+
+body{
+    background-image: url(Css/Imagenes/fondo\ pagina.jpeg);
+    background-position: center center;
+   
+    background-attachment:fixed ;
+}
+
+.inicio{
+    color: #000;
+}
+
+.producto{
+    color: #000;
+}
