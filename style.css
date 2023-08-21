@@ -25,18 +25,22 @@ body{
 }
 
 .inicio{
-    color: #000;
+    color: aliceblue;
 }
 
 .producto{
-    color: #000;
+    color: aliceblue;
 }
 
 
 .Inicio{
-    color: #000;
+    color: aliceblue;
 }
 
 .Empleados{
-    color: #000;
+    color:aliceblue;
+}
+
+h1{
+    color:aliceblue;
 }
