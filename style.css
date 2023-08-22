@@ -18,9 +18,8 @@
 }
 
 body{
-    background-image: url(Css/Imagenes/fondo\ pagina.jpeg);
+    background-image: url(Css/Imagenes/fondoazul.png);
     background-position: center center;
-   
     background-attachment:fixed ;
 }
 
